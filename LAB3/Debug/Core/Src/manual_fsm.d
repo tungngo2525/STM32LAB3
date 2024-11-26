@@ -1,4 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+Core/Src/manual_fsm.o: ../Core/Src/manual_fsm.c ../Core/Inc/manual_fsm.h \
+ ../Core/Inc/input_button.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -23,10 +24,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Core/Inc/processing_fsm.h ../Core/Inc/input_button.h \
- ../Core/Inc/main.h ../Core/Inc/software_timer.h \
- ../Core/Inc/output_traffic.h ../Core/Inc/output_led7seg.h \
- ../Core/Inc/software_timer.h ../Core/Inc/manual_fsm.h
+ ../Core/Inc/software_timer.h ../Core/Inc/output_traffic.h \
+ ../Core/Inc/output_led7seg.h
+
+../Core/Inc/manual_fsm.h:
+
+../Core/Inc/input_button.h:
 
 ../Core/Inc/main.h:
 
@@ -78,18 +81,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
-../Core/Inc/processing_fsm.h:
-
-../Core/Inc/input_button.h:
-
-../Core/Inc/main.h:
-
 ../Core/Inc/software_timer.h:
 
 ../Core/Inc/output_traffic.h:
 
 ../Core/Inc/output_led7seg.h:
-
-../Core/Inc/software_timer.h:
-
-../Core/Inc/manual_fsm.h:
