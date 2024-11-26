@@ -1,9 +1,11 @@
 /*
  * software_timer.c
  *
- *  Created on: Nov 25, 2024
+ *  Created on: Nov 26, 2024
  *      Author: tungn
  */
+
+
 #include "software_timer.h"
 
 uint8_t timerFlags[TIMER_NUMBER];
@@ -26,5 +28,3 @@ void timerRun(void) {
         }
     }
 }
-
-

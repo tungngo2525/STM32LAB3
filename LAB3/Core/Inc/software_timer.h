@@ -1,7 +1,7 @@
 /*
  * software_timer.h
  *
- *  Created on: Nov 25, 2024
+ *  Created on: Nov 26, 2024
  *      Author: tungn
  */
 
@@ -19,4 +19,3 @@ void timerSet(int duration, int index);
 void timerRun(void);
 
 #endif /* INC_SOFTWARE_TIMER_H_ */
-
