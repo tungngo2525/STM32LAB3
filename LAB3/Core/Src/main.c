@@ -22,6 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "processing_fsm.h"
 #include "software_timer.h"
 /* USER CODE END Includes */
 
@@ -90,6 +91,7 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
+  fsmInit();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -97,7 +99,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  fsmProcessing();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -236,6 +238,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     timerRun();
+    buttonReading();
 }
 /* USER CODE END 4 */
 

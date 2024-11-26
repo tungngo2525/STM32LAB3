@@ -7,6 +7,7 @@
 C_SRCS += \
 ../Core/Src/input_button.c \
 ../Core/Src/main.c \
+../Core/Src/processing_fsm.c \
 ../Core/Src/software_timer.c \
 ../Core/Src/stm32f1xx_hal_msp.c \
 ../Core/Src/stm32f1xx_it.c \
@@ -17,6 +18,7 @@ C_SRCS += \
 OBJS += \
 ./Core/Src/input_button.o \
 ./Core/Src/main.o \
+./Core/Src/processing_fsm.o \
 ./Core/Src/software_timer.o \
 ./Core/Src/stm32f1xx_hal_msp.o \
 ./Core/Src/stm32f1xx_it.o \
@@ -27,6 +29,7 @@ OBJS += \
 C_DEPS += \
 ./Core/Src/input_button.d \
 ./Core/Src/main.d \
+./Core/Src/processing_fsm.d \
 ./Core/Src/software_timer.d \
 ./Core/Src/stm32f1xx_hal_msp.d \
 ./Core/Src/stm32f1xx_it.d \
